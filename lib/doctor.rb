@@ -20,7 +20,7 @@ class Doctor
   end
   
   def genres
-    appointments.map {|appointment| appointment.genre}
+    Appointments.map {|appointment| appointment.genre}
   end
  
   def self.all
