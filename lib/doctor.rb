@@ -15,12 +15,12 @@ class Doctor
   
   def appointments
     Appointment.all.select do |appointment|
-      appointment.artist == self
+      appointment.doctor == self
     end
   end
   
-  def genres
-    Appointments.map {|appointment| appointment.genre}
+  def patients
+    Appointments.map {|appointment| appointment.patients}
   end
  
   def self.all
