@@ -16,8 +16,11 @@ class Patient
     Appointment.new(time, self, doctor)
   end
   
-  def artists
-    songs.map {|song| song.artist}
+  def appointments
+    Appointment.all.select do |appointment|
+      appointment.patient == self
+    end
   end
+  
  
 end
