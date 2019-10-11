@@ -9,12 +9,12 @@ class Doctor
     @@all << self
   end
   
-  def new_appointment(name, genre)
-    Appointment.new(name, self, genre)
+  def new_appointment(time, patient)
+    Appointment.new(time, patient, self)
   end
   
   def appointments
-    appointment.all.select do |appointment|
+    Appointment.all.select do |appointment|
       appointment.artist == self
     end
   end
