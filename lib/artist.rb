@@ -1,12 +1,11 @@
 class Artist
  
-  attr_accessor :name, :yrs_experience
+  attr_accessor :name, 
  
   @@all = []
  
   def initialize(name)
     @name = name
-    @yrs_experience = yrs_experience
     @@all << self
   end
   
