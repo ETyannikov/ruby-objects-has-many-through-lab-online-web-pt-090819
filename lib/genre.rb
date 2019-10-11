@@ -1,4 +1,4 @@
-class Customer
+class genre
   attr_accessor :name
  
   @@all = []
@@ -12,9 +12,9 @@ class Customer
     @@all
   end
  
-  def meals
-    Meal.all.select do |meal|
-      meal.customer == self
+  def songs
+    Song.all.select do |song|
+      song.genre == self
     end
   end
  
