@@ -1,4 +1,4 @@
-class Meal
+class Song
  
   attr_accessor :waiter, :customer, :total, :tip
  
